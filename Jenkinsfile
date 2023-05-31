@@ -2,8 +2,11 @@ pipeline
 {
   agent
   {
-    label 'worker'
-    customWorkspace '/home/ubuntu'
+    node 
+    {
+        label 'worker'
+        customWorkspace '/home/ubuntu'
+    }
   }
   stages
   {
